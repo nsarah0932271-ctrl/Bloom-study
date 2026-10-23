@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="theme-color" content="#f7e9f1">
-<title>Bloom Study — N_Sarah</title>
+<title>Bloom Study</title>
 <style>
 :root{--pink:#e96ca8;--rose:#f8dce9;--lav:#eee7ff;--ink:#30263a;--muted:#84778b;--paper:#fffafd;--line:#f0dfeb;--green:#2f956b;--red:#c65372}
 *{box-sizing:border-box}body{margin:0;background:linear-gradient(135deg,#fff8fc,#f5f0ff 55%,#fff9f4);font-family:Inter,system-ui,-apple-system,Segoe UI,sans-serif;color:var(--ink)}button,input,select,textarea{font:inherit}button{cursor:pointer;border:0;border-radius:14px;padding:11px 15px;font-weight:700;transition:.15s}button:active{transform:scale(.98)}.primary{background:var(--pink);color:white;box-shadow:0 7px 18px #e96ca82e}.soft{background:#f8e8f1;color:#9d4775}.plain{background:white;border:1px solid var(--line);color:var(--ink)}.danger{background:#fff0f3;color:var(--red)}.app{max-width:1100px;margin:auto;padding:18px 18px 90px}.top{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:22px}.brand{display:flex;align-items:center;gap:10px}.logo{width:44px;height:44px;border-radius:15px;background:linear-gradient(140deg,#f8a8cb,#b9a3ff);display:grid;place-items:center;font-size:23px;box-shadow:0 7px 20px #d99bc94a}.brand h1{font-size:20px;margin:0}.brand p{margin:2px 0 0;color:var(--muted);font-size:12px}.userpill{background:#fff;border:1px solid var(--line);border-radius:99px;padding:8px 12px;font-weight:700;font-size:13px}.hero{padding:25px;border-radius:25px;background:linear-gradient(120deg,#ffe3ef,#f0e9ff);position:relative;overflow:hidden;margin-bottom:18px}.hero:after{content:"✿";position:absolute;font-size:120px;right:24px;top:-12px;color:#fff8;transform:rotate(14deg)}.eyebrow{font-size:11px;letter-spacing:1.5px;text-transform:uppercase;font-weight:800;color:#a34d7d}.hero h2{font-size:clamp(25px,5vw,36px);line-height:1.12;margin:8px 0}.hero p{color:#725f79;max-width:560px;margin:8px 0 17px}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:16px 0 22px}.stat,.panel,.subject,.testcard{background:#fffdfd;border:1px solid var(--line);border-radius:20px;padding:17px;box-shadow:0 6px 20px #5a2a4d08}.stat .num{font-size:26px;font-weight:850}.stat .label{font-size:12px;color:var(--muted)}.sectionhead{display:flex;align-items:center;justify-content:space-between;gap:12px;margin:25px 0 12px}.sectionhead h3{margin:0;font-size:18px}.subjects{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.subject{padding:16px;cursor:pointer;text-align:left;min-height:120px;position:relative;overflow:hidden}.subject:hover{transform:translateY(-2px);border-color:#edb6d1}.subject .emoji{font-size:26px}.subject h4{margin:10px 0 4px;font-size:14px}.subject p{margin:0;font-size:11px;color:var(--muted)}.subject .dot{position:absolute;right:14px;top:14px;width:8px;height:8px;border-radius:50%;background:var(--pink)}.grid2{display:grid;grid-template-columns:1.2fr .8fr;gap:14px}.panel h3{margin:0 0 13px;font-size:16px}.muted{color:var(--muted);font-size:13px}.field{display:flex;flex-direction:column;gap:6px;margin:10px 0}.field label{font-size:12px;font-weight:750;color:#6e5a70}.field input,.field select,.field textarea{width:100%;border:1px solid #eadbe7;background:#fff;border-radius:12px;padding:11px;color:var(--ink);outline:none}.field input:focus,.field select:focus,.field textarea:focus{border-color:var(--pink);box-shadow:0 0 0 3px #e96ca81c}.row{display:flex;gap:10px}.row>*{flex:1;min-width:0}.actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}.hide{display:none!important}.testlist{display:grid;gap:9px}.testrow{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px;border:1px solid var(--line);border-radius:14px;background:white}.testrow strong{display:block;font-size:13px}.testrow small{color:var(--muted)}.pill{font-size:11px;font-weight:800;background:#f7e8f1;color:#a14b7a;padding:5px 8px;border-radius:99px;white-space:nowrap}.bar{height:9px;background:#f1e6ef;border-radius:99px;overflow:hidden}.bar span{height:100%;display:block;background:linear-gradient(90deg,#f18bb9,#a79aff);border-radius:99px}.chart{width:100%;height:180px;display:block}.tabs{display:flex;gap:7px;overflow:auto;padding-bottom:4px}.tab{white-space:nowrap;background:white;border:1px solid var(--line);color:var(--muted)}.tab.active{background:var(--ink);color:white}.quizwrap{max-width:720px;margin:0 auto}.quiztop{display:flex;justify-content:space-between;align-items:center;gap:10px;margin:10px 0 18px}.timer{font-variant-numeric:tabular-nums;font-weight:850;background:#fff0f5;border:1px solid #f5c6dc;padding:9px 13px;border-radius:13px;color:#b4487b}.qcard{background:white;border:1px solid var(--line);border-radius:24px;padding:clamp(18px,4vw,30px);box-shadow:0 10px 30px #5326460d}.qmeta{display:flex;justify-content:space-between;gap:8px;font-size:12px;color:var(--muted)}.qcard h2{font-size:clamp(20px,4vw,26px);line-height:1.3;margin:22px 0}.option{display:flex;align-items:flex-start;gap:11px;width:100%;text-align:left;background:#fffafd;border:1px solid #efdfeb;padding:14px;border-radius:14px;margin:9px 0;font-weight:550;color:var(--ink)}.option .letter{width:25px;height:25px;flex-shrink:0;border-radius:8px;background:#f7e5ef;display:grid;place-items:center;font-size:12px;font-weight:850}.option.selected{border-color:var(--pink);background:#fff0f7;box-shadow:0 0 0 2px #e96ca81a}.option.selected .letter{background:var(--pink);color:white}.qfoot{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-top:20px}.tiny{font-size:11px;color:var(--muted)}.resultscore{font-size:45px;font-weight:900;letter-spacing:-2px}.reviewitem{border:1px solid var(--line);border-radius:15px;padding:14px;margin:10px 0;background:white}.correct{color:var(--green);font-weight:800}.wrong{color:var(--red);font-weight:800}.notice{padding:12px 14px;background:#fff5fa;border:1px solid #f4d5e4;border-radius:14px;font-size:12px;color:#81546e}.bottomnav{position:fixed;bottom:0;left:0;right:0;background:#fffbfeec;backdrop-filter:blur(14px);border-top:1px solid var(--line);display:flex;justify-content:center;gap:7px;padding:10px;z-index:5}.bottomnav button{background:transparent;color:var(--muted);font-size:12px;padding:8px 13px}.bottomnav button.active{background:#f9e4ef;color:#a34677}.empty{text-align:center;padding:28px 10px;color:var(--muted)}.empty span{font-size:30px}.toast{position:fixed;top:16px;left:50%;transform:translateX(-50%);background:#34283d;color:white;padding:12px 17px;border-radius:14px;z-index:20;box-shadow:0 8px 25px #0002;font-size:13px}
@@ -13,8 +13,8 @@
 <body>
 <div class="app" id="app">
 <header class="top">
- <div class="brand"><div class="logo">✿</div><div><h1>Bloom Study</h1><p>Ton espace pour progresser, un test à la fois</p></div></div>
- <div class="userpill">♡ N_Sarah</div>
+ <div class="brand"><div class="logo">✿</div><div><h1 id="siteHeading">Bloom Study</h1><p>Ton espace pour progresser, un test à la fois</p></div></div>
+ <div class="userpill" id="userpill">♡ Mon espace</div>
 </header>
 <main id="main"></main>
 </div>
@@ -29,12 +29,31 @@ const SUBJECTS=[
  {name:"Informatique",emoji:"💻",color:"#e0f3fb"},{name:"Français",emoji:"📚",color:"#f4e5ff"},
  {name:"Philosophie",emoji:"💭",color:"#ffe5e0"}
 ];
-const KEY="bloomStudy.v1";
-let data=JSON.parse(localStorage.getItem(KEY)||"null")||{profile:"N_Sarah",users:["N_Sarah"],tests:[],results:[],draft:null};
+const KEY="bloomStudy.v2";
+const OLD_KEY="bloomStudy.v1";
+let store=JSON.parse(localStorage.getItem(KEY)||"null");
+if(!store){
+ const old=JSON.parse(localStorage.getItem(OLD_KEY)||"null")||{profile:"Mon espace",users:["Mon espace"],tests:[],results:[],draft:null};
+ store={active:old.profile||"Mon espace",users:old.users||[old.profile||"Mon espace"],siteName:"Bloom Study",profiles:{}};
+ (store.users||[]).forEach(n=>store.profiles[n]={tests:[],results:[]});
+ store.profiles[store.active]={tests:old.tests||[],results:old.results||[]};
+}
+if(!store.profiles)store.profiles={};
+if(!store.users)store.users=[store.active||"Mon espace"];
+if(!store.active)store.active=store.users[0]||"Mon espace";
+if(!store.profiles[store.active])store.profiles[store.active]={tests:[],results:[]};
+let data={profile:store.active,users:store.users,tests:store.profiles[store.active].tests||[],results:store.profiles[store.active].results||[],draft:null,siteName:store.siteName||"Bloom Study"};
 let page="home",filterSubject="Toutes",quiz=null,tick=null;
 const $=s=>document.querySelector(s);
 const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
-function save(){localStorage.setItem(KEY,JSON.stringify(data))}
+function save(){
+ store.active=data.profile;store.users=data.users;store.siteName=data.siteName||"Bloom Study";
+ store.profiles[data.profile]={tests:data.tests,results:data.results};
+ localStorage.setItem(KEY,JSON.stringify(store));
+ const pill=$("#userpill");if(pill)pill.textContent="♡ "+data.profile;
+ const heading=$("#siteHeading");if(heading)heading.textContent=data.siteName||"Bloom Study";
+ document.title=(data.siteName||"Bloom Study")+" — "+data.profile;
+}
 function toast(msg){let t=$("#toast");t.textContent=msg;t.classList.remove("hide");setTimeout(()=>t.classList.add("hide"),2200)}
 function subjectEmoji(n){return SUBJECTS.find(s=>s.name===n)?.emoji||"✿"}
 function dateText(v){try{return new Date(v).toLocaleDateString("fr-FR",{day:"2-digit",month:"short",year:"numeric"})}catch{return v||""}}
@@ -47,7 +66,7 @@ function render(){
 function home(){
  const recent=[...data.results].reverse().slice(0,3);
  $("#main").innerHTML=`
- <section class="hero"><div class="eyebrow">Ton petit coin de réussite ✨</div><h2>Chaque effort compte,<br>Sarah.</h2><p>Organise tes révisions, entraîne-toi en conditions de test et observe tes progrès matière par matière.</p><button class="primary" onclick="page='tests';render()">Commencer un test →</button></section>
+ <section class="hero"><div class="eyebrow">Ton petit coin de réussite ✨</div><h2>Chaque effort compte,<br>${esc(data.profile)}.</h2><p>Organise tes révisions, entraîne-toi en conditions de test et observe tes progrès matière par matière.</p><button class="primary" onclick="page='tests';render()">Commencer un test →</button></section>
  <section class="stats"><div class="stat"><div class="num">${data.results.length}</div><div class="label">Tests terminés</div></div><div class="stat"><div class="num">${data.results.length?avg().toFixed(1)+"%":"—"}</div><div class="label">Moyenne générale</div></div><div class="stat"><div class="num">${new Set(data.results.map(r=>r.subject)).size}/7</div><div class="label">Matières travaillées</div></div></section>
  <div class="sectionhead"><h3>Choisis ta matière</h3><span class="muted">7 matières</span></div>
  <div class="subjects">${SUBJECTS.map(s=>`<button class="subject" style="background:linear-gradient(145deg,#fff,${s.color})" onclick="selectSubject('${s.name}')"><span class="dot"></span><span class="emoji">${s.emoji}</span><h4>${s.name}</h4><p>${data.results.filter(r=>r.subject===s.name).length} test(s) passé(s)</p></button>`).join("")}</div>
@@ -57,9 +76,28 @@ function home(){
 function selectSubject(s){filterSubject=s;page="tests";render()}
 function testsPage(){
  $("#main").innerHTML=`<div class="sectionhead"><div><div class="eyebrow">Bibliothèque</div><h2 style="margin:4px 0">Mes tests & leçons</h2></div><button class="primary" onclick="newTest()">＋ Créer un test</button></div>
- <div class="panel" style="margin-bottom:15px"><div class="row"><div class="field"><label>Matière</label><select id="subjectFilter" onchange="filterSubject=this.value;testsPage()"><option ${filterSubject==="Toutes"?"selected":""}>Toutes</option>${SUBJECTS.map(s=>`<option ${filterSubject===s.name?"selected":""}>${s.name}</option>`).join("")}</select></div><div class="field"><label>Recherche</label><input id="searchTest" placeholder="Titre ou leçon…" oninput="filterTestRows()"></div></div><p class="muted">Crée ton propre QCM, indique la leçon, la date et la durée. Pendant le test, tu ne peux ni revenir en arrière ni passer une question sans choisir.</p></div>
+ <div class="panel" style="margin-bottom:15px"><div class="row"><div class="field"><label>Matière</label><select id="subjectFilter" onchange="filterSubject=this.value;testsPage()"><option ${filterSubject==="Toutes"?"selected":""}>Toutes</option>${SUBJECTS.map(s=>`<option ${filterSubject===s.name?"selected":""}>${s.name}</option>`).join("")}</select></div><div class="field"><label>Recherche</label><input id="searchTest" placeholder="Titre ou leçon…" oninput="filterTestRows()"></div></div><p class="muted">Crée tes QCM, puis lance un test surprise : les questions sont tirées au hasard de ta bibliothèque et ne sont révélées qu'au démarrage.</p>
+ <div class="row"><div class="field"><label>Leçon / partie à réviser</label><input id="randomLesson" placeholder="Ex. Quantificateurs (laisser vide = toutes)"></div><div class="field"><label>Nombre de questions</label><input id="randomCount" type="number" min="1" max="300" value="10"></div></div>
+ <div class="row"><div class="field"><label>Difficulté</label><select id="randomDifficulty"><option value="Toutes">Toutes</option><option value="Easy">Facile</option><option value="Medium">Moyenne</option><option value="Hard">Difficile</option></select></div><div class="field"><label>Durée (minutes)</label><input id="randomDuration" type="number" min="1" max="240" value="20"></div></div>
+ <button class="primary" onclick="makeRandomTest()">🎲 Préparer mon test surprise</button><p class="tiny">Le tirage aléatoire utilise les questions déjà enregistrées. La génération de nouvelles questions par une véritable IA nécessite une connexion à un service d'IA.</p></div>
  <div id="testRows" class="testlist"></div>`;
  filterTestRows();
+}
+function makeRandomTest(){
+ const lesson=($("#randomLesson")?.value||"").trim().toLowerCase();
+ const count=Math.max(1,Math.min(300,Number($("#randomCount")?.value)||10));
+ const difficulty=$("#randomDifficulty")?.value||"Toutes";
+ let pool=[];
+ data.tests.forEach(t=>{
+  if(lesson && !(`${t.title} ${t.lesson}`.toLowerCase().includes(lesson)))return;
+  t.questions.forEach(q=>{if(difficulty==="Toutes"||q.difficulty===difficulty)pool.push({...q,sourceTitle:t.title,sourceLesson:t.lesson,sourceSubject:t.subject});});
+ });
+ if(!pool.length){toast("Aucune question disponible pour ces critères. Crée ou ajoute d'abord des questions à tes QCM.");return;}
+ for(let i=pool.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[pool[i],pool[j]]=[pool[j],pool[i]];}
+ const picked=pool.slice(0,Math.min(count,pool.length));
+ const title="Test surprise — "+(lesson?lesson:"révision aléatoire");
+ data.draft={id:"t"+Date.now(),title,subject:picked[0].sourceSubject||"Mathématiques",lesson:lesson||"Tirage aléatoire",date:new Date().toISOString().slice(0,10),duration:Math.max(1,Math.min(240,Number($("#randomDuration")?.value)||20)),questions:picked.map(({sourceTitle,sourceLesson,sourceSubject,...q})=>q)};
+ save();data.tests.push(data.draft);const id=data.draft.id;data.draft=null;save();toast(`Test surprise créé : ${picked.length} question(s) tirée(s) au hasard.`);startQuiz(id);
 }
 function filterTestRows(){
  let box=$("#testRows");if(!box)return;
@@ -78,6 +116,14 @@ function editorPage(){
  <div class="panel"><div class="row"><div class="field"><label>Titre du test</label><input id="tTitle" value="${esc(d.title)}" placeholder="Ex. Fonctions usuelles"></div><div class="field"><label>Matière</label><select id="tSubject">${SUBJECTS.map(s=>`<option ${d.subject===s.name?"selected":""}>${s.name}</option>`).join("")}</select></div></div>
  <div class="row"><div class="field"><label>Leçon / chapitre</label><input id="tLesson" value="${esc(d.lesson)}" placeholder="Ex. Périodicité"></div><div class="field"><label>Date du test</label><input id="tDate" type="date" value="${esc(d.date)}"></div><div class="field"><label>Durée (minutes)</label><input id="tDuration" type="number" min="1" max="240" value="${d.duration}"></div></div>
  <div class="notice">Barème : +1 par bonne réponse, −0,5 par mauvaise réponse, 0 si la question est laissée sans réponse à la fin du temps. Pour une question à plusieurs réponses, le point est partagé entre les bonnes options trouvées ; une mauvaise option cochée entraîne une pénalité partagée.</div>
+ <section class="panel" style="margin-top:16px;background:linear-gradient(145deg,#fff8fc,#f5f0ff)">
+ <div class="eyebrow">Nouvelle fonctionnalité ✨</div><h3 style="margin:5px 0 8px">Générer des questions avec l’IA</h3>
+ <p class="muted">Indique le titre de la leçon et la partie précise. Les questions générées seront ajoutées à ton QCM, que tu pourras modifier avant de l’enregistrer.</p>
+ <div class="field"><label>Leçon à utiliser</label><input id="aiLesson" value="${esc(d.lesson||d.title)}" placeholder="Ex. Suites réelles"></div>
+ <div class="field"><label>Partie du cours</label><input id="aiSection" placeholder="Ex. Suites arithmétiques"></div>
+ <div class="row"><div class="field"><label>Nombre de questions</label><select id="aiCount"><option value="3">3 questions</option><option value="5" selected>5 questions</option><option value="10">10 questions</option><option value="15">15 questions</option></select></div><div class="field"><label>Difficulté</label><select id="aiDifficulty"><option value="facile">Facile</option><option value="moyenne" selected>Moyenne</option><option value="difficile">Difficile</option></select></div></div>
+ <button class="primary" id="aiGenerateBtn" onclick="generateAIQuestions()">✨ Générer les questions</button><p id="aiStatus" class="muted" role="status"></p>
+ </section>
  <div class="sectionhead"><h3>Questions <span class="pill" id="qCount">${d.questions.length}</span></h3><button class="soft" onclick="addQuestion()">＋ Ajouter</button></div>
  <div id="questionEditor">${d.questions.map((q,i)=>questionForm(q,i)).join("")}</div>
  <div class="actions"><button class="primary" onclick="saveTest()">Enregistrer le test</button><button class="plain" onclick="addQuestion()">＋ Ajouter une question</button></div></div>`;
@@ -85,10 +131,45 @@ function editorPage(){
 function questionForm(q,i){
  return `<div class="reviewitem" data-q="${i}"><div class="sectionhead" style="margin:0 0 10px"><h3>Question ${i+1}</h3><button class="danger" onclick="removeQuestion(${i})">Supprimer</button></div>
  <div class="field"><label>Énoncé</label><textarea id="qtext${i}" rows="2" placeholder="Écris la question…">${esc(q.text)}</textarea></div>
- <div class="row"><div class="field"><label>Type de question</label><select id="qtype${i}" onchange="toggleCorrectMode(${i})"><option value="single" ${q.type==="single"?"selected":""}>Une seule bonne réponse</option><option value="multi" ${q.type==="multi"?"selected":""}>Plusieurs bonnes réponses</option></select></div><div class="field"><label>Difficulté</label><select id="qdif${i}"><option ${q.difficulty==="Medium"?"selected":""}>Medium</option><option ${q.difficulty==="Hard"?"selected":""}>Hard</option></select></div></div>
+ <div class="row"><div class="field"><label>Type de question</label><select id="qtype${i}" onchange="toggleCorrectMode(${i})"><option value="single" ${q.type==="single"?"selected":""}>Une seule bonne réponse</option><option value="multi" ${q.type==="multi"?"selected":""}>Plusieurs bonnes réponses</option></select></div><div class="field"><label>Difficulté</label><select id="qdif${i}"><option value="Easy" ${q.difficulty==="Easy"?"selected":""}>Facile</option><option value="Medium" ${q.difficulty==="Medium"?"selected":""}>Moyenne</option><option value="Hard" ${q.difficulty==="Hard"?"selected":""}>Difficile</option></select></div></div>
  <div class="field"><label>Options (sélectionne la/les bonne(s) réponse(s))</label><div id="opts${i}">${q.options.map((o,j)=>`<div class="row" style="align-items:center;margin:6px 0"><label style="display:flex;align-items:center;gap:7px;flex:0 0 auto"><input type="${q.type==="multi"?"checkbox":"radio"}" name="correct${i}" value="${j}" ${q.correct.includes(j)?"checked":""}></label><input id="opt${i}_${j}" value="${esc(o)}" placeholder="Option ${j+1}"><button class="danger" onclick="removeOption(${i},${j})">×</button></div>`).join("")}</div><button class="plain" onclick="addOption(${i})">＋ Ajouter une option</button></div>
  <div class="field"><label>Explication (facultatif)</label><textarea id="qexp${i}" rows="2" placeholder="Explique la bonne méthode…">${esc(q.explanation||"")}</textarea></div></div>`;
 }
+
+async function generateAIQuestions(){
+ const lesson=(document.getElementById("aiLesson")?.value||document.getElementById("tLesson")?.value||document.getElementById("tTitle")?.value||"").trim();
+ const section=(document.getElementById("aiSection")?.value||"").trim();
+ const count=Math.max(1,Math.min(15,Number(document.getElementById("aiCount")?.value)||5));
+ const difficulty=document.getElementById("aiDifficulty")?.value||"moyenne";
+ const btn=document.getElementById("aiGenerateBtn"),status=document.getElementById("aiStatus");
+ if(!lesson||!section){toast("Renseigne la leçon et la partie du cours.");return;}
+ if(btn){btn.disabled=true;btn.textContent="Génération en cours…";}if(status)status.textContent="L’IA prépare les questions. Cela peut prendre quelques secondes…";
+ try{
+  const response=await fetch("https://dawn-firefly-ea02.n-sarah0932271.workers.dev",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({lesson,section,difficulty,count})});
+  const raw=await response.text();let payload;try{payload=JSON.parse(raw)}catch{throw new Error("Le serveur a renvoyé une réponse illisible.")}
+  if(!response.ok||payload.ok===false)throw new Error(payload.error||payload.message||"Le serveur n’a pas pu générer les questions.");
+  let qs=payload.questions||payload.data?.questions;
+  if(!Array.isArray(qs)&&typeof payload.output_text==="string"){try{const parsed=JSON.parse(payload.output_text);qs=parsed.questions||parsed}catch{}}
+  if(!Array.isArray(qs)&&Array.isArray(payload.output)){for(const item of payload.output){for(const c of (item.content||[])){if(c.text){try{const parsed=JSON.parse(c.text);qs=parsed.questions||parsed;break}catch{}}}if(Array.isArray(qs))break}}
+  if(!Array.isArray(qs)||!qs.length)throw new Error("La réponse du serveur ne contient pas de liste de questions exploitable.");
+  const converted=qs.slice(0,count).map((q,i)=>{
+   let options=Array.isArray(q.options)?q.options:(Array.isArray(q.choices)?q.choices:[]);
+   options=options.map(o=>typeof o==="string"?o:(o.text||o.label||String(o)));
+   let correct=q.correct??q.correctAnswer??q.answer??q.correct_answer??0;
+   let correctIndexes=[];
+   if(Array.isArray(correct))correctIndexes=correct.map(v=>typeof v==="number"?v:options.findIndex(o=>o===v||o===v?.text)).filter(n=>Number.isInteger(n)&&n>=0&&n<options.length);
+   else if(typeof correct==="number")correctIndexes=[correct];
+   else {const idx=options.findIndex(o=>o===String(correct));if(idx>=0)correctIndexes=[idx];else if(typeof correct==="string"&&/^[A-D]$/i.test(correct))correctIndexes=[correct.toUpperCase().charCodeAt(0)-65];}
+   if(options.length<2)options=["Vrai","Faux"];
+   correctIndexes=correctIndexes.filter(n=>n<options.length);if(!correctIndexes.length)correctIndexes=[0];
+   return {text:String(q.text||q.question||q.statement||`Question ${i+1}`),type:correctIndexes.length>1?"multi":"single",options,correct:correctIndexes,difficulty:(difficulty==="facile"?"Easy":difficulty==="difficile"?"Hard":"Medium"),explanation:String(q.explanation||q.explanationText||q.justification||"")};
+  });
+  syncDraft();data.draft.questions.push(...converted);editorPage();toast(`${converted.length} question(s) ajoutée(s) par l’IA 💗`);
+  const newStatus=document.getElementById("aiStatus");if(newStatus)newStatus.textContent=`${converted.length} question(s) ajoutée(s). Vérifie les réponses et les explications avant d’enregistrer.`;
+ }catch(err){if(status)status.textContent="Échec : "+(err.message||"impossible de joindre le serveur.");toast("Génération impossible. Vérifie la connexion et l’adresse du serveur.");}
+ finally{const b=document.getElementById("aiGenerateBtn");if(b){b.disabled=false;b.textContent="✨ Générer les questions";}}
+}
+
 function collectQuestions(){
  let out=[];for(let i=0;i<data.draft.questions.length;i++){
  let old=data.draft.questions[i],text=$("#qtext"+i)?.value||"",type=$("#qtype"+i)?.value||"single",opts=old.options.map((_,j)=>$("#opt"+i+"_"+j)?.value||"");
@@ -170,19 +251,29 @@ function drawChart(){
 }
 function settingsPage(){
  $("#main").innerHTML=`<div class="sectionhead"><div><div class="eyebrow">Personnalisation</div><h2 style="margin:4px 0">Mon espace 💗</h2></div></div>
- <section class="panel"><h3>Profil</h3><div class="field"><label>Nom affiché</label><input id="profileName" value="${esc(data.profile)}" maxlength="35"></div><button class="primary" onclick="saveProfile()">Enregistrer mon nom</button><p class="muted">Les données sont enregistrées localement sur cet appareil et dans ce navigateur. Ce prototype ne synchronise pas encore les résultats entre plusieurs appareils.</p></section>
+ <section class="panel"><h3>Profil et apparence</h3><div class="field"><label>Nom affiché / pseudo</label><input id="profileName" value="${esc(data.profile)}" maxlength="35"></div><div class="field"><label>Nom de ton site</label><input id="siteNameInput" value="${esc(data.siteName||"Bloom Study")}" maxlength="45" placeholder="Ex. Sarah Study Space"></div><button class="primary" onclick="saveProfile()">Enregistrer la personnalisation</button><p class="muted">Chaque espace conserve ses propres tests et résultats sur cet appareil et dans ce navigateur. Il ne s’agit pas encore de comptes sécurisés et les données ne se synchronisent pas entre appareils.</p></section>
  <section class="panel" style="margin-top:14px"><h3>Créer / changer d'espace</h3><p class="muted">Chaque profil sur cet appareil dispose de son propre historique. Pour l'instant, ces espaces sont locaux et ne sont pas protégés par un mot de passe.</p><div class="row"><div class="field"><label>Nom du nouvel espace</label><input id="newProfile" placeholder="Ex. Aminata"></div><button class="soft" style="align-self:end;margin-bottom:10px" onclick="createProfile()">＋ Créer</button></div><div class="field"><label>Espaces enregistrés sur cet appareil</label><select id="profileSelect">${data.users.map(u=>`<option ${u===data.profile?"selected":""}>${esc(u)}</option>`).join("")}</select></div><button class="plain" onclick="switchProfile()">Ouvrir cet espace</button></section>
  <section class="panel" style="margin-top:14px"><h3>Données</h3><p class="muted">Télécharge une copie de tes tests et résultats pour les conserver.</p><div class="actions"><button class="soft" onclick="exportData()">Exporter mes données</button><button class="danger" onclick="resetData()">Effacer cet espace</button></div></section>`;
 }
-function saveProfile(){data.profile=$("#profileName").value.trim()||"N_Sarah";if(!data.users.includes(data.profile))data.users.push(data.profile);save();render();toast("Profil mis à jour.")}
-function createProfile(){let n=$("#newProfile").value.trim();if(!n){toast("Choisis un nom d'espace.");return}if(!data.users.includes(n))data.users.push(n);data.profile=n;data.tests=[];data.results=[];save();render();toast("Nouvel espace créé.")}
-function switchProfile(){let n=$("#profileSelect").value;if(n===data.profile)return;data.profile=n;data.tests=[];data.results=[];save();render();toast("Espace ouvert.")}
+function saveProfile(){
+ const oldName=data.profile,newName=$("#profileName").value.trim()||"Mon espace";
+ data.siteName=$("#siteNameInput")?.value.trim()||"Bloom Study";
+ if(newName!==oldName){
+  if(data.users.includes(newName)){toast("Ce nom d'espace existe déjà. Choisis un autre nom.");return;}
+  store.profiles[oldName]={tests:data.tests,results:data.results};
+  data.users=data.users.filter(n=>n!==oldName);data.users.push(newName);data.profile=newName;
+  store.profiles[newName]={tests:data.tests,results:data.results};
+ }
+ save();render();toast("Personnalisation enregistrée 💗");
+}
+function createProfile(){let n=$("#newProfile").value.trim();if(!n){toast("Choisis un nom d'espace.");return}if(data.users.includes(n)){toast("Cet espace existe déjà.");return}store.profiles[data.profile]={tests:data.tests,results:data.results};data.users.push(n);store.profiles[n]={tests:[],results:[]};data.profile=n;data.tests=[];data.results=[];save();render();toast("Nouvel espace créé.")}
+function switchProfile(){let n=$("#profileSelect").value;if(n===data.profile)return;store.profiles[data.profile]={tests:data.tests,results:data.results};data.profile=n;if(!store.profiles[n])store.profiles[n]={tests:[],results:[]};data.tests=store.profiles[n].tests||[];data.results=store.profiles[n].results||[];save();render();toast("Espace ouvert.")}
 function exportData(){let blob=new Blob([JSON.stringify(data,null,2)],{type:"application/json"}),a=document.createElement("a");a.href=URL.createObjectURL(blob);a.download="bloom-study-"+data.profile+".json";a.click();URL.revokeObjectURL(a.href)}
 function resetData(){if(!confirm("Effacer tous les tests et résultats de cet espace ? Cette action est irréversible."))return;data.tests=[];data.results=[];save();render();toast("Espace vidé.")}
 $("#nav").addEventListener("click",e=>{let b=e.target.closest("button[data-page]");if(!b)return;page=b.dataset.page;filterSubject="Toutes";render()});
 window.addEventListener("resize",()=>{if(page==="progress")drawChart()});
 const oldRender=render;
 render=function(){if(page==="editor"){editorPage();return}oldRender()};
-render();
+save();render();
 </script>
 </body></html>
