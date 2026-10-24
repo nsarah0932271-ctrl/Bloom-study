@@ -154,8 +154,34 @@ async function generateAIQuestions(){
   const raw=await response.text();let payload;try{payload=JSON.parse(raw)}catch{throw new Error("Le serveur a renvoyé une réponse illisible.")}
   if(!response.ok||payload.ok===false)throw new Error(payload.error||payload.message||"Le serveur n’a pas pu générer les questions.");
   let qs=payload.questions||payload.data?.questions;
-  if(!Array.isArray(qs)&&typeof payload.output_text==="string"){try{const parsed=JSON.parse(payload.output_text);qs=parsed.questions||parsed}catch{}}
-  if(!Array.isArray(qs)&&Array.isArray(payload.output)){for(const item of payload.output){for(const c of (item.content||[])){if(c.text){try{const parsed=JSON.parse(c.text);qs=parsed.questions||parsed;break}catch{}}}if(Array.isArray(qs))break}}
+  
+  if(!Array.isArray(qs)&&typeof payload.output_text==="string"){
+    try{
+      const parsed=JSON.parse(payload.output_text.trim().replace(/^```(?:json)?\s*/i,"").replace(/\s*```$/,""));
+      qs=Array.isArray(parsed)?parsed:parsed.questions||parsed.data?.questions;
+    }catch{}
+  }
+  if(!Array.isArray(qs)&&typeof payload.text==="string"){
+    try{
+      const parsed=JSON.parse(payload.text.trim());
+      qs=Array.isArray(parsed)?parsed:parsed.questions||parsed.data?.questions;
+    }catch{}
+  }
+  if(!Array.isArray(qs)&&Array.isArray(payload.output)){
+    for(const item of payload.output){
+      for(const part of item.content||[]){
+        if(typeof part.text==="string"){
+          try{
+            const parsed=JSON.parse(part.text.trim().replace(/^```(?:json)?\s*/i,"").replace(/\s*```$/,""));
+            qs=Array.isArray(parsed)?parsed:parsed.questions||parsed.data?.questions;
+          }catch{}
+          if(Array.isArray(qs))break;
+        }
+      }
+      if(Array.isArray(qs))break;
+    }
+  }
+  
   if(!Array.isArray(qs)||!qs.length)throw new Error("La réponse du serveur ne contient pas de liste de questions exploitable.");
   const converted=qs.slice(0,count).map((q,i)=>{
    let options=Array.isArray(q.options)?q.options:(Array.isArray(q.choices)?q.choices:[]);
